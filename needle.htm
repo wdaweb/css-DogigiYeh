@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .a {
+            width: 500px;
+            height: 75px;
+            border: 1px solid #999;
+            border-radius: 2px;
+            background-image: linear-gradient(to bottom,
+            white 0%,
+            #e0dede  55%,
+            white 100%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .a::before {
+            content: "";
+            width: 70px;
+            height: 110px;
+            border: 1px solid #999;
+            border-radius: 3px;
+            background-image: linear-gradient(to bottom,
+            white 0%,
+            #e0dede  55%,
+            white 100%);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .a::after {
+            content: "";
+            width: 150px;
+            height: 0.05em;
+            background: #999;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(166%, -50%);
+        }
+
+        .b {
+            width: 300px;
+            height: 105px;
+            color: #999;
+            font-size: 10px;
+            border: 1px solid #999;
+            border-radius: 2px;
+            background-image:
+                linear-gradient(to right,
+                    #fff 0 45%,
+                    #000 45% 55%,
+                    rgb(121, 202, 239) 55% 100%);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+        }
+
+        .b::before {
+            width: 300px;
+            height: 10px;
+            content: "MADE IN TAIWAN";
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 3px;
+            line-height: 195px;
+            background-image:
+                linear-gradient(to left,
+                    rgb(0, 0, 0, 0.3) 1px, transparent 0px);
+            background-repeat: repeat;
+            background-size: 10px 10px, 10px 10px;
+            position: absolute;
+            top: 50%;
+            left: -1.5px;
+            top: 5px;
+            transform: translate(0, -50%);
+        }
+
+        .b::after {
+            content: "";
+            width: 300px;
+            height: 105px;
+            opacity: 0.2;
+            background-image:
+                linear-gradient(to bottom,
+                    #fff 0%,
+                    #000 60%,
+                    #fff 95% 100%);
+            position: absolute;
+            top: 50%;
+            right: -1px;
+            transform: translate(0, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b"></div>
+    </div>
+</body>
+</html>

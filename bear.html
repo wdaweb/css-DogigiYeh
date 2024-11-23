@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bear {
+            width: 580px;
+            height: 580px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* margin: auto; */
+            /* z-index: 1; */
+        }
+
+
+
+
+        .ear {
+            border: 18px solid black;
+            width: 90px;
+            height: 90px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-290%, -300%);
+            margin: auto;
+            /* z-index: ; */
+        }
+
+        .ear::before {
+            content: "";
+            border: 18px solid black;
+            width: 90px;
+            height: 90px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(530%, -50%);
+            margin: auto;
+            /* z-index: 1; */
+        }
+
+
+
+        .eye_left {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-150%, -150%);
+            margin: auto;
+            /* z-index: ; */
+        }
+
+        .eye_left::before {
+            content: "";
+            width: 80px;
+            height: 80px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            /* z-index: ; */
+        }
+
+        .eye_left::after {
+            content: "";
+            width: 150px;
+            height: 150px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-140%, 30%);
+            margin: auto;
+            /* z-index: ; */
+        }
+
+        .eye_right {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(150%, -150%);
+            margin: auto;
+            /* z-index: ; */
+        }
+
+        .eye_right::before {
+            content: "";
+            width: 80px;
+            height: 80px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            margin: auto;
+            /* z-index: ; */
+        }
+
+        .eye_right::after {
+            content: "";
+            width: 150px;
+            height: 150px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(140%, 30%);
+            margin: auto;
+            /* z-index: ; */
+        }
+
+
+        .nose_mouth {
+            width: 250px;
+            height: 160px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -40%);
+            margin: auto;
+        }
+
+        .nose_mouth::before {
+            content: "";
+            width: 60px;
+            height: 40px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -150%);
+            margin: auto;
+        }
+
+        .nose_mouth::after {
+            content: "";
+            width: 150px;
+            height: 50px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -10%);
+            margin: auto;
+        }
+
+        .v-mark {
+            width: 15%;
+            height: 10%;
+            background: white;
+            position: absolute;
+            left: 30%;
+            top: 75%;
+            transform: skew(55deg, 0deg);
+            /* transform-origin: center center; */
+            margin: auto;
+        }
+
+        .v-mark::before {
+            content: "";
+            width: 90%;
+            height: 100%;
+            background: white;
+            position: absolute;
+            right: -170%;
+            top: 0;
+            transform: skew(-70deg, 0deg);
+            /* transform-origin: center center; */
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bear">
+        <div class="ear"></div>
+        <div class="eye_left"></div>
+        <div class="eye_right"></div>
+        <div class="nose_mouth"></div>
+        <div class="v-mark"></div>
+    </div>
+</body>
+
+</html>
